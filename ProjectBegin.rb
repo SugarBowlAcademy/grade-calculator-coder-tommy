@@ -22,7 +22,7 @@ in this project you will be creating a program that tells people what grade they
 
 
 
-puts "what is the totals amount of points possible in your class?"
+puts "what is the total amount of points possible in your class?"
 total=gets.to_f
 puts "How many points do you currently have in this class"
 current=gets.to_f
@@ -31,10 +31,10 @@ puts "Current grade #{currentGrade}"
 puts "do you have an assignment coming up?"
 reply = gets.chomp
 if reply=="yes"
-  puts "How many points is your test out of"
+  puts "How many points is your assignment out of"
   test_points=gets.to_f
   newtotal = test_points+total
-  puts "what grade in percentage do you want in this class"
+  puts "what grade in percentage do you want in this class after the assignment"
   grade_reply=gets.to_f
   grade_reply = grade_reply / 100
   dreamGrade = grade_reply*newtotal
